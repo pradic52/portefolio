@@ -15,6 +15,15 @@ export default function Hero() {
     link.download = t("CV file name") || "cv.pdf";
     link.click();
   };
+  const hireMe = () => {
+    const link = document.createElement("a");
+    const subject = encodeURIComponent(t("hero.hireMe.object"));
+    const body = encodeURIComponent(t("hero.hireMe.body"));
+
+    link.href = `mailto:tokpanoeld@gmail.com?subject=${subject}&body=${body}`;
+    link.click();
+  };
+
   return (
     <header
       id="homeHero"
@@ -64,7 +73,10 @@ export default function Hero() {
           </li>
         </ul>
         <div className="flex space-x-4 mt-4">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+          <button
+            onClick={hireMe}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+          >
             {t("hero.hireMe")}
           </button>
           <button

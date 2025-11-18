@@ -16,6 +16,8 @@
   "hero.location": "Montreal, Canada",
   "hero.evailable": "Available Now",
   "hero.hireMe": "Hire Me",
+  "hero.hireMe.object": "Recruitment Opportunity",
+  "hero.hireMe.body": "We are <Company_Name>, specializing in <industry>. Your profile caught our attention, and we’d like to explore a professional collaboration with you. For further discussion, please contact us at <phone_number>.",
   "hero.downloadCV": "Download CV",
   "hero.followMe": "Follow Me",
   "CV file name": "cv-it-support.pdf",

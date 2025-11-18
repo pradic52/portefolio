@@ -16,6 +16,8 @@
   "hero.location": "Montréal, Canada",
   "hero.evailable": "Disponible maintenant",
   "hero.hireMe": "Embauchez-moi",
+  "hero.hireMe.object": "Opportunité de recrutement",
+  "hero.hireMe.body": "Nous sommes <Nom_entreprise>, spécialisés dans <domaine>. Votre profil nous intéresse et nous souhaiterions explorer une collaboration professionnelle avec vous. Pour toute discussion, vous pouvez nous joindre au <numero_de_téléphone>.",
   "hero.downloadCV": "Télécharger le CV",
   "hero.followMe": "Suivez-moi",
   "CV file name": "cv soutien informatique.pdf",
