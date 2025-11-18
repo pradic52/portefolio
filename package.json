@@ -1,6 +1,6 @@
 {
   "name": "portefolio-tnd",
-  "homepage": "https://pradic52.github.io/portefolio-tnd",
+  "homepage": "https://pradic52.github.io/portefolio",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "private": false,
