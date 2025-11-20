@@ -29,14 +29,12 @@ export default function Hero() {
       id="homeHero"
       className="animate-fadeIn flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10"
     >
-      <div className="aspect-video">
-        <img
-          src={profil}
-          alt="Profile"
-          className="h-100 shadow-lg opacity-90 rounded-full object-cover m-4 p-4"
-          loading="lazy"
-        />
-      </div>
+      <img
+        src={profil}
+        alt="Profile"
+        className="h-100 shadow-lg opacity-90 rounded-full object-cover m-4 p-4"
+        loading="lazy"
+      />
       <div className="flex flex-col space-y-4 max-w-2xl">
         <span className="text-xl text-gray-600">{t("hero.lookingFor")}</span>
         <h1 className="text-4xl font-bold">{t("hero.title")}</h1>

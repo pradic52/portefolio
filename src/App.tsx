@@ -21,7 +21,7 @@ function App() {
   ];
 
   return (
-    <div className="bg-neutral-300 min-h-screen pt-20">
+    <div className="bg-neutral-300 pt-20">
       <MainNav />
 
       {sections.map(({ id, component: Section }) => (
