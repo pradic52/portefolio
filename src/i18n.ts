@@ -8,10 +8,10 @@ i18next.use(initReactI18next).init({
     en: { translation: en },
     fr: { translation: fr },
   },
-  lng: navigator.language.startsWith("fr") ? "fr" : "en", // Detect language from browser
+  lng: navigator.language.startsWith("fr") ? "fr" : "en",
   fallbackLng: "en",
   interpolation: {
-    escapeValue: false, // React already safes from xss
+    escapeValue: false,
   },
 });
 
