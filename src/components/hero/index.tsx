@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 import { Typewriter } from "react-simple-typewriter";
 import profil from "../../assets/profil.jpg";
 import cvEn from "../../assets/cv-en.pdf";
@@ -6,10 +7,10 @@ import cvFr from "../../assets/cv-fr.pdf";
 import { MapPinIcon, GlobeAmericasIcon } from "@heroicons/react/24/outline";
 import { SocialIcon } from "react-social-icons";
 
-const cv = navigator.language.startsWith("fr") ? cvFr : cvEn;
 export default function Hero() {
   const { t } = useTranslation();
   const downloadCV = () => {
+    const cv = i18n.language === "fr" ? cvFr : cvEn;
     const link = document.createElement("a");
     link.href = cv;
     link.download = t("CV file name") || "cv.pdf";
