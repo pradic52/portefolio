@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
 import { Typewriter } from "react-simple-typewriter";
-import profil from "../../assets/profil.jpg";
+import profil from "../../assets/profil2.jpg.jpeg";
 import cvEn from "../../assets/cv-en.pdf";
 import cvFr from "../../assets/cv-fr.pdf";
 import { MapPinIcon, GlobeAmericasIcon } from "@heroicons/react/24/outline";
@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="flex flex-col space-y-4 max-w-2xl">
         <span className="text-xl text-gray-600">{t("hero.lookingFor")}</span>
         <h1 className="text-4xl font-bold">{t("hero.title")}</h1>
-        <h3 className="text-3xl font-bold">
+        <h3 className="text-xl font-bold">
           <Typewriter
             words={[
               t("hero.subtitle1"),

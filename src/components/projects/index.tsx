@@ -26,6 +26,12 @@ export default function Projets() {
       link: undefined,
       img: vm,
     },
+    {
+      title: t("projects.project4.title"),
+      description: t("projects.project4.description"),
+      link: "https://github.com/pradic52/ubc_2.git",
+      img: pos,
+    },
   ];
 
   return (
