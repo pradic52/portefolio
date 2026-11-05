@@ -8,7 +8,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center text-center py-16">
+    <div className="flex flex-col items-center text-center">
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

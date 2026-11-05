@@ -1,21 +1,22 @@
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
+import { useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import profil from "../../assets/profil2.jpg.jpeg";
 import cvEn from "../../assets/cv-en.pdf";
 import cvFr from "../../assets/cv-fr.pdf";
+import studyCertificate from "../../assets/Certificatdefindetude.pdf";
+import clubCertificate from "../../assets/clubInfoCertificat.pdf";
 import { MapPinIcon, GlobeAmericasIcon } from "@heroicons/react/24/outline";
 import { SocialIcon } from "react-social-icons";
 
 export default function Hero() {
   const { t } = useTranslation();
-  const downloadCV = () => {
-    const cv = i18n.language === "fr" ? cvFr : cvEn;
-    const link = document.createElement("a");
-    link.href = cv;
-    link.download = t("CV file name") || "cv.pdf";
-    link.click();
-  };
+  const documentsDialog = useRef<HTMLDialogElement>(null);
+  const isFrench = i18n.language.toLowerCase().startsWith("fr");
+  const cvFileName = isFrench
+    ? "cv-Tokpa-Noël-Doré-Soutien-informatique.pdf"
+    : "resume-Tokpa-Noël-Doré-IT-Support.pdf";
   const hireMe = () => {
     const link = document.createElement("a");
     const subject = encodeURIComponent(t("hero.hireMe.object"));
@@ -47,6 +48,9 @@ export default function Hero() {
               t("hero.subtitle3"),
               t("hero.subtitle4"),
               t("hero.subtitle5"),
+              t("hero.subtitle6"),
+              t("hero.subtitle7"),
+              t("hero.subtitle8"),
             ]}
             loop={false}
             cursor
@@ -56,7 +60,9 @@ export default function Hero() {
             delaySpeed={1000}
           />
         </h3>
-        <p className="text-2xl leading-7">{t("hero.summary")}</p>
+        <p className="text-2xl leading-7">{t("hero.summary1")}</p>
+        <p className="text-2xl leading-7">{t("hero.summary2")}</p>
+        <p className="text-2xl leading-7">{t("hero.summary3")}</p>
 
         <ul id="someInfo" className="flex space-x-6 mt-4">
           <li className="flex text-nowrap">
@@ -68,7 +74,7 @@ export default function Hero() {
               className="h-6 w-6 text-gray-500"
               aria-hidden="true"
             />{" "}
-            {t("hero.evailable")}
+            {t("hero.available")}
           </li>
         </ul>
         <div className="flex space-x-4 mt-4">
@@ -79,12 +85,66 @@ export default function Hero() {
             {t("hero.hireMe")}
           </button>
           <button
-            onClick={downloadCV}
-            className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition"
+            type="button"
+            onClick={() => documentsDialog.current?.showModal()}
+            aria-haspopup="dialog"
+            aria-controls="hero-documents-dialog"
+            className="rounded-lg bg-gray-700 px-4 py-2 text-white transition hover:bg-gray-800"
           >
-            {t("hero.downloadCV")}
+            {t("hero.documents.button")}
           </button>
         </div>
+        <dialog
+          ref={documentsDialog}
+          id="hero-documents-dialog"
+          aria-labelledby="hero-documents-title"
+          className="m-auto w-[calc(100%-2rem)] max-w-md rounded-2xl bg-white p-6 text-gray-900 shadow-xl backdrop:bg-black/50"
+        >
+          <div className="flex items-start justify-between gap-4">
+            <h2 id="hero-documents-title" className="text-xl font-bold">
+              {t("hero.documents.title")}
+            </h2>
+            <button
+              type="button"
+              onClick={() => documentsDialog.current?.close()}
+              className="rounded px-2 py-1 text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+            >
+              {t("hero.documents.close")}
+            </button>
+          </div>
+          <ul className="mt-5 flex flex-col gap-3">
+            <li>
+              <a
+                href={isFrench ? cvFr : cvEn}
+                download={cvFileName}
+                onClick={() => documentsDialog.current?.close()}
+                className="block rounded-lg border border-gray-200 px-4 py-3 text-blue-700 hover:bg-blue-50 focus:outline-2 focus:outline-blue-600"
+              >
+                {t("hero.documents.cv")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={studyCertificate}
+                download="certificat-fin-etudes.pdf"
+                onClick={() => documentsDialog.current?.close()}
+                className="block rounded-lg border border-gray-200 px-4 py-3 text-blue-700 hover:bg-blue-50 focus:outline-2 focus:outline-blue-600"
+              >
+                {t("hero.documents.studyCertificate")}
+              </a>
+            </li>
+            <li>
+              <a
+                href={clubCertificate}
+                download="certificat-club-informatique.pdf"
+                onClick={() => documentsDialog.current?.close()}
+                className="block rounded-lg border border-gray-200 px-4 py-3 text-blue-700 hover:bg-blue-50 focus:outline-2 focus:outline-blue-600"
+              >
+                {t("hero.documents.clubCertificate")}
+              </a>
+            </li>
+          </ul>
+        </dialog>
         <hr />
 
         <ul className="flex space-x-2 mt-4 items-center ">

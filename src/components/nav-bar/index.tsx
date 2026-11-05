@@ -1,8 +1,8 @@
 import {
   HomeIcon,
   UserIcon,
+  TrophyIcon,
   BriefcaseIcon,
-  WrenchIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
@@ -44,14 +44,14 @@ function MainNav() {
       href: "#about",
     },
     {
-      name: t("nav.projects"),
-      icon: <BriefcaseIcon className="w-6 h-6" />,
-      href: "#projects",
+      name: t("nav.realizations"),
+      icon: <TrophyIcon className="w-6 h-6" />,
+      href: "#realizations",
     },
     {
-      name: t("nav.services"),
-      icon: <WrenchIcon className="w-6 h-6" />,
-      href: "#services",
+      name: t("nav.expertise"),
+      icon: <BriefcaseIcon className="w-6 h-6" />,
+      href: "#expertise",
     },
     {
       name: t("nav.contact"),
