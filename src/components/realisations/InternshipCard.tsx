@@ -49,9 +49,9 @@ export default function InternshipCard({
         </div>
 
         <div>
-          <h3 className="text-xl font-bold text-neutral-900">
+          <h4 className="text-xl font-bold text-neutral-900">
             {internship.company}
-          </h3>
+          </h4>
 
           <p className="text-sm text-gray-600 mt-1">{internship.position}</p>
         </div>
@@ -61,9 +61,9 @@ export default function InternshipCard({
 
       {/* Compétences */}
       <div className="flex-1">
-        <h4 className="text-sm font-semibold text-neutral-900 mb-4">
+        <h5 className="text-sm font-semibold text-neutral-900 mb-4">
           {t("internships.skillsHeading")}
-        </h4>
+        </h5>
 
         <ul className="space-y-3">
           {internship.skills.map((skill, index) => (

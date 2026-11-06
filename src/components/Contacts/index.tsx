@@ -9,14 +9,14 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col items-center text-center">
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-3xl font-bold mb-3 text-gray-800"
       >
         {t("contact.title")}
-      </motion.h1>
+      </motion.h2>
 
       <p className="text-gray-600 max-w-xl mb-6">{t("contact.description")}</p>
 

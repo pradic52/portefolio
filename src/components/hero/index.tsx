@@ -33,14 +33,14 @@ export default function Hero() {
     >
       <img
         src={profil}
-        alt="Profile"
+        alt="Portrait de Tokpa Noël Doré"
         className="h-100 shadow-lg opacity-90 rounded-full object-cover m-4 p-4"
         loading="lazy"
       />
       <div className="flex flex-col space-y-4 max-w-2xl">
         <span className="text-xl text-gray-600">{t("hero.lookingFor")}</span>
         <h1 className="text-4xl font-bold">{t("hero.title")}</h1>
-        <h3 className="text-xl font-bold">
+        <h2 className="text-xl font-bold">
           <Typewriter
             words={[
               t("hero.subtitle1"),
@@ -59,7 +59,7 @@ export default function Hero() {
             deleteSpeed={50}
             delaySpeed={1000}
           />
-        </h3>
+        </h2>
         <p className="text-2xl leading-7">{t("hero.summary1")}</p>
         <p className="text-2xl leading-7">{t("hero.summary2")}</p>
         <p className="text-2xl leading-7">{t("hero.summary3")}</p>

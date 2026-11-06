@@ -39,9 +39,9 @@ export default function CareerTimeline({ items }: CareerTimelineProps) {
                       : item.startDate}
                   </p>
 
-                  <h3 className="text-sm font-bold leading-snug sm:text-base">
+                  <h4 className="text-sm font-bold leading-snug sm:text-base">
                     {item.title}
-                  </h3>
+                  </h4>
 
                   <p className="text-sm text-gray-600 mt-2">
                     {item.organization}

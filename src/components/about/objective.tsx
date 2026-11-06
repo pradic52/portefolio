@@ -26,9 +26,9 @@ export default function Objective() {
 
   return (
     <section className="px-6">
-      <h2 className="text-4xl font-bold text-center mb-10">
+      <h3 className="text-4xl font-bold text-center mb-10">
         {t("about.objective.title")}
-      </h2>
+      </h3>
       <div className="flex flex-col space-y-8 mx-auto">
         {objectives.map((objective, index) => (
           <div key={index} className="">

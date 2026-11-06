@@ -22,7 +22,7 @@ export default function ProjectCard({ project }: Props) {
       </div>
 
       <div className="flex flex-1 flex-col p-6">
-        <h3 className="text-xl font-bold text-neutral-900">{title}</h3>
+        <h4 className="text-xl font-bold text-neutral-900">{title}</h4>
         <p className="mt-2 text-sm font-medium text-gray-600">
           {t(project.technologiesKey)}
         </p>

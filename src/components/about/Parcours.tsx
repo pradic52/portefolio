@@ -51,9 +51,9 @@ export default function Parcours() {
 
   return (
     <section className="w-full min-w-0 px-6">
-      <h2 className="mb-10 text-center text-4xl font-bold">
+      <h3 className="mb-10 text-center text-4xl font-bold">
         {t("about.parcours.title")}
-      </h2>
+      </h3>
 
       <CareerTimeline items={timeline} />
       <p className="mt-8 text-center text-lg">

@@ -67,9 +67,9 @@ export default function Internships() {
   return (
     <section className="w-full py-16 px-4">
       {/* Titre */}
-      <h2 className="text-4xl font-bold text-center mb-10 text-neutral-900">
+      <h3 className="text-4xl font-bold text-center mb-10 text-neutral-900">
         {t("about.internships.title")}
-      </h2>
+      </h3>
 
       {/* Liste des stages */}
       <div className="max-w-7xl mx-auto">

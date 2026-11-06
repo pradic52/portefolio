@@ -8,11 +8,11 @@ function About() {
   return (
     <div className="animate-fadeIn mx-auto flex w-full min-w-0 max-w-6xl flex-col items-center gap-10">
       <div className="flex w-full min-w-0 max-w-screen-lg flex-col">
-        <h4 className="text-xl text-gray-600">{t("about.title")}</h4>
+        <h2 className="text-xl text-gray-600">{t("about.title")}</h2>
         <section className="mt-6 px-6">
-          <h2 className="mb-6 text-center text-4xl font-bold">
+          <h3 className="mb-6 text-center text-4xl font-bold">
             {t("about.howami.title")}
-          </h2>
+          </h3>
           <p className="text-2xl leading-7">{t("about.howami.content")}</p>
         </section>
       </div>
