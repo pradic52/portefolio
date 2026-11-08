@@ -29,15 +29,15 @@ export default function Hero() {
   return (
     <header
       id="homeHero"
-      className="animate-fadeIn flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10"
+      className="animate-fadeIn flex w-full min-w-0 max-w-6xl flex-col items-center gap-6 md:flex-row md:gap-10"
     >
       <img
         src={profil}
         alt="Portrait de Tokpa Noël Doré"
-        className="h-100 shadow-lg opacity-90 rounded-full object-cover m-4 p-4"
+        className="h-56 w-56 max-w-full rounded-full object-cover opacity-90 shadow-lg sm:h-72 sm:w-72 md:h-96 md:w-72"
         loading="lazy"
       />
-      <div className="flex flex-col space-y-4 max-w-2xl">
+      <div className="flex w-full min-w-0 max-w-2xl flex-col gap-4">
         <span className="text-xl text-gray-600">{t("hero.lookingFor")}</span>
         <h1 className="text-4xl font-bold">{t("hero.title")}</h1>
         <h2 className="text-xl font-bold">
@@ -64,20 +64,20 @@ export default function Hero() {
         <p className="text-2xl leading-7">{t("hero.summary2")}</p>
         <p className="text-2xl leading-7">{t("hero.summary3")}</p>
 
-        <ul id="someInfo" className="flex space-x-6 mt-4">
-          <li className="flex text-nowrap">
-            <MapPinIcon className="h-6 w-6 text-gray-500" aria-hidden="true" />{" "}
-            {t("hero.location")}
+        <ul id="someInfo" className="mt-4 flex w-full min-w-0 flex-wrap justify-center gap-x-6 gap-y-2 md:justify-start">
+          <li className="flex min-w-0 items-center gap-1">
+            <MapPinIcon className="h-6 w-6 shrink-0 text-gray-500" aria-hidden="true" />
+            <span>{t("hero.location")}</span>
           </li>
-          <li className="flex text-nowrap">
+          <li className="flex min-w-0 items-center gap-1">
             <GlobeAmericasIcon
-              className="h-6 w-6 text-gray-500"
+              className="h-6 w-6 shrink-0 text-gray-500"
               aria-hidden="true"
-            />{" "}
-            {t("hero.available")}
+            />
+            <span>{t("hero.available")}</span>
           </li>
         </ul>
-        <div className="flex space-x-4 mt-4">
+        <div className="mt-4 flex w-full flex-wrap justify-center gap-4 md:justify-start">
           <button
             onClick={hireMe}
             className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
@@ -147,7 +147,7 @@ export default function Hero() {
         </dialog>
         <hr />
 
-        <ul className="flex space-x-2 mt-4 items-center ">
+        <ul className="mt-4 flex w-full min-w-0 flex-wrap items-center justify-center gap-2 md:justify-start">
           <li>
             <span>{t("hero.followMe")}:</span>
           </li>
