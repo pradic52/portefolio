@@ -1,4 +1,4 @@
-import{u as c,j as e,r as p}from"./index-C0XjijFA.js";function x({internship:i,seeMoreLabel:t,onOpenGallery:s}){const{t:n}=c();return e.jsxs("article",{className:`
+import{u as c,j as e,r as p}from"./index-CUJX_JAL.js";function x({internship:i,seeMoreLabel:t,onOpenGallery:s}){const{t:n}=c();return e.jsxs("article",{className:`
       w-full h-full
       rounded-2xl
       border border-neutral-100
