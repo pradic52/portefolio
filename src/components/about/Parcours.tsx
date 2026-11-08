@@ -24,18 +24,21 @@ export default function Parcours() {
       organization: t("internship1.company"),
       startDate: t("internship1.period.start"),
       endDate: t("internship1.period.end"),
+      details: [t("hero.location")],
     },
     {
       title: t("internship2.position"),
       organization: t("internship2.company"),
       startDate: t("internship2.period.start"),
       endDate: t("internship2.period.end"),
+      details: [t("hero.location")],
     },
     {
       title: t("internship3.position"),
       organization: t("internship3.company"),
       startDate: t("internship3.period.start"),
       endDate: t("internship3.period.end"),
+      details: [t("hero.location")],
     },
     {
       title: t("about.parcours.graduation.title"),
@@ -50,7 +53,7 @@ export default function Parcours() {
   ]);
 
   return (
-    <section className="w-full min-w-0 px-6">
+    <section className="w-full min-w-0 px-2 sm:px-6">
       <h3 className="mb-10 text-center text-4xl font-bold">
         {t("about.parcours.title")}
       </h3>

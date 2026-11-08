@@ -40,7 +40,7 @@ export default function Hero() {
       <div className="flex w-full min-w-0 max-w-2xl flex-col gap-4">
         <span className="text-xl text-gray-600">{t("hero.lookingFor")}</span>
         <h1 className="text-4xl font-bold">{t("hero.title")}</h1>
-        <h2 className="text-xl font-bold">
+        <h2 className="min-h-14 w-full max-w-sm text-center text-xl font-bold leading-7 md:min-h-7 md:max-w-none md:text-left">
           <Typewriter
             words={[
               t("hero.subtitle1"),
@@ -101,7 +101,7 @@ export default function Hero() {
           className="m-auto w-[calc(100%-2rem)] max-w-md rounded-2xl bg-white p-6 text-gray-900 shadow-xl backdrop:bg-black/50"
         >
           <div className="flex items-start justify-between gap-4">
-            <h2 id="hero-documents-title" className="text-xl font-bold">
+            <h2 id="hero-documents-title" className="min-h-14 w-full max-w-sm text-center text-xl font-bold leading-7 md:min-h-7 md:max-w-none md:text-left">
               {t("hero.documents.title")}
             </h2>
             <button

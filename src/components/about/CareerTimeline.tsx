@@ -21,8 +21,8 @@ export default function CareerTimeline({ items }: CareerTimelineProps) {
                 key={index}
                 className="
                   relative flex-shrink-0
-                  w-[220px] sm:w-[240px] md:w-[260px] lg:w-[280px]
-                  h-[360px]
+                  w-[260px] sm:w-[280px] md:w-[280px] lg:w-[300px]
+                  h-[380px]
                 "
               >
                 {/* Informations */}
@@ -47,9 +47,9 @@ export default function CareerTimeline({ items }: CareerTimelineProps) {
                     {item.organization}
                   </p>
                   {item.details?.map((detail) => (
-                    <span key={detail} className="mt-1 text-xs text-gray-600">
-                      * {detail} *
-                    </span>
+                    <p key={detail} className="mt-1 text-xs text-gray-600">
+                      {detail}
+                    </p>
                   ))}
                 </div>
 
@@ -58,7 +58,7 @@ export default function CareerTimeline({ items }: CareerTimelineProps) {
                   className={`
                     absolute left-1/2 -translate-x-1/2
                     w-px h-8 bg-gray-300
-                    ${isTop ? "top-[160px]" : "bottom-[160px]"}
+                    ${isTop ? "top-[170px]" : "bottom-[170px]"}
                   `}
                 />
 
