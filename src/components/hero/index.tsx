@@ -174,6 +174,20 @@ export default function Hero() {
           </li>
           <li>
             <SocialIcon
+              network="facebook"
+              url="https://www.facebook.com/tokpanoel.dore.52"
+              className="transition-transform duration-300 hover:scale-110"
+            />
+          </li>
+          <li>
+            <SocialIcon
+              network="youtube"
+              url="https://www.youtube.com/@tokpanoeldore3223"
+              className="transition-transform duration-300 hover:scale-110"
+            />
+          </li>
+          <li>
+            <SocialIcon
               network="github"
               url="https://github.com/pradic52"
               className="transition-transform duration-300 hover:scale-110"
