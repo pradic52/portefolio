@@ -160,13 +160,6 @@ export default function Hero() {
           </li>
           <li>
             <SocialIcon
-              network="instagram"
-              url="https://www.instagram.com/pradic_5.2_tnt"
-              className="transition-transform duration-300 hover:scale-110"
-            />
-          </li>
-          <li>
-            <SocialIcon
               network="linkedin"
               url="https://www.linkedin.com/in/tokpa-noël-doré-237b93303"
               className="transition-transform duration-300 hover:scale-110"
@@ -176,13 +169,6 @@ export default function Hero() {
             <SocialIcon
               network="facebook"
               url="https://www.facebook.com/tokpanoel.dore.52"
-              className="transition-transform duration-300 hover:scale-110"
-            />
-          </li>
-          <li>
-            <SocialIcon
-              network="youtube"
-              url="https://www.youtube.com/@tokpanoeldore3223"
               className="transition-transform duration-300 hover:scale-110"
             />
           </li>
